@@ -1,0 +1,107 @@
+/* popup/styles.css */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 350px;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+#export-btn {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#export-btn:hover {
+    background-color: #005ecb;
+}
+
+#highlights-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#no-highlights-msg {
+    color: #888;
+    text-align: center;
+    padding: 20px;
+}
+
+.highlight-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.highlight-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 8px;
+    border-left: 3px solid #fefcbf;
+    padding-left: 10px;
+}
+
+.highlight-note {
+    font-size: 14px;
+    background-color: #eef7ff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.highlight-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.action-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+}

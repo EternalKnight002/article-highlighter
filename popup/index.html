@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Highlighter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Highlights</h1>
+            <div>
+                <button id="export-btn" title="Export full page with highlights">Export Page</button>
+                <button id="export-highlights-btn" title="Export only the highlighted text">Export Highlights</button>
+            </div>
+        </header>
+        <main id="highlights-list">
+            <p id="no-highlights-msg">No highlights on this page yet.</p>
+        </main>
+    </div>
+
+    <template id="highlight-item-template">
+        <div class="highlight-item">
+            <div class="highlight-text"></div>
+            <div class="highlight-note"></div>
+            <div class="highlight-actions">
+                <button class="action-btn go-to-btn" title="Go to highlight">⬇️</button>
+                <button class="action-btn edit-btn" title="Edit note">✏️</button>
+                <button class="action-btn delete-btn" title="Delete highlight">🗑️</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="popup.js"></script>
+</body>
+</html>
